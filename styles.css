@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: beige;
+    font-weight: bold;
+}
+
+header > a {
+    font-size: 20px;
+    display: flex;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+    gap: 20px; 
+}
+
+.hero-banner {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-banner p {
+    font-weight: bold;
+}
+
+.hero-banner button {
+    
+}
