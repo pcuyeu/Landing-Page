@@ -33,23 +33,35 @@ ul {
     height: 300px;
 }
 
+.hero-banner .left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .hero-banner .left-side .main-text {
+    display: flex;
     font-size: 48px;
     font-weight: bolder;
     color: #F9FAF8;
 }
 
 .hero-banner .left-side .primary-text {
+    display: flex;
     font-size: 18px;
     color: #E5E7EB;
 }
 
 .hero-banner .left-side .SignUpButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #3882F6;
     color: white;
     width: 100px;
     height: 30px;
     border-radius: 10px;
+    
 }
 
 .hero-banner .right-side {
@@ -64,4 +76,75 @@ ul {
 
 .middle-box {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
 }
+
+.middle-box .inner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.middle-box .title {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.middle-box .blue-boxes-div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.blue-box {
+    display: flex;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #3882F6;
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
+}
+
+.subtext-box {
+    display: flex;
+    gap: 20px;
+    justify-content: center;  
+}
+
+.subtext-box .subtext {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quote-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #E5E7EB;
+    font-style: italic;
+}
+
+.quote-box .quote {
+    display: flex;
+    font-size: 24px;
+    color: #1F2937;
+}
+
+.quote-box .credit {
+    display: flex;
+    font-weight: bolder;
+}
+
+.quote-box .credit-text {
+    display: flex;
+    font-weight: bolder;
+}
+
