@@ -141,6 +141,7 @@ ul {
 .quote-box .credit {
     display: flex;
     font-weight: bolder;
+    align-self: end;
 }
 
 .quote-box .credit-text {
@@ -148,3 +149,49 @@ ul {
     font-weight: bolder;
 }
 
+.popup-banner {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882F6;
+    height: 100px;
+}
+
+.popup-banner .left-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-banner .left-side .h3-text {
+    display: flex;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.popup-banner .left-side .span-text {
+    display: flex;
+    justify-content: center;
+}
+
+.popup-banner .btn {
+    background-color:#3882F6;
+    color: white;
+    border-color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    align-items: center; /* Moves items horizontally along the cross axis*/
+    justify-content: center; /* Moves items vertically along the main axis */
+    background: #1F2937;
+    color: white;
+  }
