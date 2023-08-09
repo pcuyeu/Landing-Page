@@ -1,16 +1,18 @@
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header {
     display: flex;
     color: white;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     text-align: left;
     background-color: #1F2937;
     font-weight: bold;
+    gap: 470px;
 }
 
 header > a {
@@ -23,14 +25,16 @@ ul {
     list-style-type: none;
     font-size: 20px;
     gap: 20px; 
+    color: white;
 }
 
 .hero-banner {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: #1F2937;
-    height: 300px;
+    height: 450px;
+    gap: 100px;
 }
 
 .hero-banner .left-side {
@@ -58,10 +62,10 @@ ul {
     align-items: center;
     background-color: #3882F6;
     color: white;
-    width: 100px;
-    height: 30px;
+    width: 120px;
+    height: 40px;
     border-radius: 10px;
-    
+    font-size: medium;  
 }
 
 .hero-banner .right-side {
@@ -70,36 +74,30 @@ ul {
     align-items: center;
     background-color: gray;
     color: #E5E7EB;
-    width: 300px;
-    height: 125px; /* changes the height of entire hb*/
+    width: 500px;
+    height: 250px; /* changes the height of entire hb*/
 }
 
 .middle-box {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    height: 300px;
+    height: 400px;
 }
 
-.middle-box .inner-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 20px;
-}
-
-.middle-box .title {
+.title {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
+    height: 100px;
 }
 
 .middle-box .blue-boxes-div {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
 }
 
 .blue-box {
@@ -107,60 +105,68 @@ ul {
     border-style: solid;
     border-width: 3px;
     border-color: #3882F6;
-    width: 160px;
-    height: 160px;
+    width: 135px;
+    height: 135px;
     border-radius: 10px;
 }
 
 .subtext-box {
     display: flex;
-    gap: 20px;
-    justify-content: center;  
+    gap: 20px;  
 }
 
-.subtext-box .subtext {
+.inner-box .subtext {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .quote-box {
     display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    gap: 10px;
+    padding: 0 200px;
     background-color: #E5E7EB;
-    font-style: italic;
+    height: 350px;
 }
 
 .quote-box .quote {
     display: flex;
-    font-size: 24px;
+    font-size: 36px;
+    font-style: italic;
     color: #1F2937;
 }
 
 .quote-box .credit {
     display: flex;
+    font-size: 18px;
     font-weight: bolder;
-    align-self: end;
 }
 
 .quote-box .credit-text {
     display: flex;
     font-weight: bolder;
+    align-self: flex-end;
 }
 
 .popup-banner {
+    background-color: #3882f6;
+    height: 150px;
+    margin: 60px 200px; /* 1st arg: top and bottom, 2nd arg: left and right*/
+    border-radius: 10px;
     display: flex;
-    color: white;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    background-color: #3882F6;
-    height: 100px;
+    gap: 100px;
+    color: white;
+    
 }
 
 .popup-banner .left-side {
     display: flex;
     flex-direction: column;
+    background-color: #3882F6;
 }
 
 .popup-banner .left-side .h3-text {
@@ -184,10 +190,6 @@ ul {
 }
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
     height: 70px;
     display: flex;
     align-items: center; /* Moves items horizontally along the cross axis*/
